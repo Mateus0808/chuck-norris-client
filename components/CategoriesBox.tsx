@@ -46,12 +46,12 @@ const CategoriesBox = ({ setJoke, setLoading }: CategoriesBoxProps) => {
           <Loading />
         </div>
       ) : (
-        <ul className="grid grid-cols-5 md:grid-cols-6 gap-4">
+        <ul className="grid grid-cols-3 sm:grid-cols-6 gap-4">
           {categories.map((category) => (
             <li
               key={category}
               onClick={() => handleClick(category)}
-              className="bg-gray-700 font-ibm-plex-serif border rounded-xl cursor-pointer flex items-center justify-center text-white py-1 px-2 hover:bg-opacity-90 capitalize"
+              className="bg-gray-700 font-ibm-plex-serif border rounded-xl text-14 cursor-pointer flex items-center justify-center text-white py-1 px-2 hover:bg-opacity-90 capitalize"
             >
               {category}
             </li>
